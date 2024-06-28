@@ -1,0 +1,13 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ArticleListPage>
+@using ContentModels = Umbraco.Cms.Web.Common.PublishedModels;
+@{
+	Layout = "_Layout.cshtml";
+}
+
+@await Html.PartialAsync("_NewsArticles")
+@await Html.PartialAsync("_ArticleandNews")
+@await Html.PartialAsync("_ArticleandNews2")
+@await Html.PartialAsync("_ArticleandNews3")
+@await Html.PartialAsync("_Pagination")
+@await Html.PartialAsync("_GetNewsUpdates")
